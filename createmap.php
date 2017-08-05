@@ -33,7 +33,7 @@
 				$var = ["type" => "long"];
 			}
 			elseif (preg_match('/.{15,}/',$var)){
-				$var = ["type" => "text"];
+				$var = ["type" => "keyword"];
 			}
 			elseif (preg_match('/.{0,15}/',$var)){
 				$var = ["type" => "text"];
