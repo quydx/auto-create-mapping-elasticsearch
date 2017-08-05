@@ -1,0 +1,161 @@
+{
+    "type": {
+        "dynamic": "strict",
+        "properties": {
+            "message": {
+                "type": "keyword"
+            },
+            "@version": {
+                "type": "double"
+            },
+            "@timestamp": {
+                "type": "keyword"
+            },
+            "type": {
+                "type": "text"
+            },
+            "host": {
+                "type": "text"
+            },
+            "sequence": {
+                "type": "double"
+            },
+            "name_server": {
+                "type": "keyword"
+            },
+            "client_ip": {
+                "type": "ip"
+            },
+            "day_log": {
+                "type": "double"
+            },
+            "month_log": {
+                "type": "text"
+            },
+            "year_log": {
+                "type": "double"
+            },
+            "time_log": {
+                "type": "text"
+            },
+            "time_zone": {
+                "type": "text"
+            },
+            "method": {
+                "type": "text"
+            },
+            "url": {
+                "type": "keyword"
+            },
+            "streaming_channel": {
+                "type": "text"
+            },
+            "filetype": {
+                "type": "text"
+            },
+            "httpversion": {
+                "type": "double"
+            },
+            "response": {
+                "type": "double"
+            },
+            "bytes": {
+                "type": "double"
+            },
+            "referer": {
+                "type": "text"
+            },
+            "user_agent": {
+                "type": "keyword"
+            },
+            "time_serve_request": {
+                "type": "double"
+            },
+            "bytes_sent_client": {
+                "type": "double"
+            },
+            "varnish_hitmiss": {
+                "type": "text"
+            },
+            "varnish_time_firstbyte": {
+                "type": "text"
+            },
+            "varnish_handling": {
+                "type": "text"
+            },
+            "http_x_forwarded_for": {
+                "type": "text"
+            },
+            "streaming_type": {
+                "type": "text"
+            },
+            "drm": {
+                "type": "text"
+            },
+            "profile_name": {
+                "type": "text"
+            },
+            "name": {
+                "type": "text"
+            },
+            "os": {
+                "type": "text"
+            },
+            "os_name": {
+                "type": "text"
+            },
+            "device": {
+                "type": "keyword"
+            },
+            "geoip": {
+                "ip": {
+                    "type": "ip"
+                },
+                "country_code2": {
+                    "type": "text"
+                },
+                "country_code3": {
+                    "type": "text"
+                },
+                "country_name": {
+                    "type": "text"
+                },
+                "continent_code": {
+                    "type": "text"
+                },
+                "region_name": {
+                    "type": "double"
+                },
+                "city_name": {
+                    "type": "text"
+                },
+                "latitude": {
+                    "type": "double"
+                },
+                "longitude": {
+                    "type": "double"
+                },
+                "timezone": {
+                    "type": "keyword"
+                },
+                "real_region_name": {
+                    "type": "text"
+                },
+                "location": [
+                    {
+                        "type": "double"
+                    },
+                    {
+                        "type": "double"
+                    }
+                ]
+            },
+            "time_write_log": {
+                "type": "keyword"
+            },
+            "customer_isp": {
+                "type": "text"
+            }
+        }
+    }
+}

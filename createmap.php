@@ -47,10 +47,17 @@
 	foreach($arr as $key => $value){
 		setValue($arr["$key"]);
 	}
-	$arr = json_encode($arr,JSON_PRETTY_PRINT);
-	var_dump($arr);
-	file_put_contents("text.txt", $arr);	
-
+	$jsn = json_encode($arr,JSON_PRETTY_PRINT);
+	var_dump($jsn);
+	file_put_contents("text.txt", $jsn);	
+	$a =[	"type" => [
+				"dynamic" => "strict",
+				"properties" => $arr
+			]
+			
+		];
+	$b = json_encode($a,JSON_PRETTY_PRINT );
+	file_put_contents("text1.txt", $b);
 
 
 
